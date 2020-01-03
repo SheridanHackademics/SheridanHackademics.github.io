@@ -39,11 +39,24 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
   color: #0e1b4d;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  background-color: #00194B;
+  color: #F2F5F9;
+}
+
+.card {
+  font-family: unset;
 }
 
 .main-page {
@@ -106,17 +119,6 @@ h6 {
   margin-bottom: 60px;
   position: relative;
   padding-bottom: 20px;
-}
-
-.section-header::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 5px;
-  background: #D7345D;
-  bottom: 0;
-  left: calc(50% - 25px);
 }
 
 .section-header h2 {
