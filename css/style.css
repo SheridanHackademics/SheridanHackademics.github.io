@@ -39,11 +39,24 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
   color: #0e1b4d;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  background-color: #00194B;
+  color: #F2F5F9;
+}
+
+.card {
+  font-family: unset;
 }
 
 .main-page {
@@ -108,17 +121,6 @@ h6 {
   padding-bottom: 20px;
 }
 
-.section-header::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 5px;
-  background: #D7345D;
-  bottom: 0;
-  left: calc(50% - 25px);
-}
-
 .section-header h2 {
   font-size: 36px;
   text-transform: uppercase;
@@ -138,6 +140,18 @@ h6 {
 
 .section-with-bg {
   background-color: #f6f7fd;
+}
+
+#banner-logo-container-sub-header {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  font-size: 22px !important;
+}
+
+#banner-logo-container-sub-header strong {
+  font-size: 34px;
+  margin-right: 1rem;
 }
 
 #banner-logo-container{
@@ -286,15 +300,26 @@ h6 {
   margin: 0;
 }
 
+#nav-menu-apply-box {
+  border: 1px solid #CDDCF1;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+#nav-menu-apply-box a:before {
+  background-color: transparent !important;
+}
+
+
+
 /* Nav Meu Styling */
 
 .nav-menu a {
   padding: 8px;
   text-decoration: none;
   display: inline-block;
-  color: rgba(202, 206, 221, 0.8);
+  color: #F2F5F9;
   font-family: "Raleway", sans-serif;
-  font-weight: 600;
   font-size: 14px;
   outline: none;
 }
@@ -706,33 +731,31 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
+# Main Section
+--------------------------------------------------------------*/
+#main {
+  background-color: #F2F5F9;
+}
+
+.flex {
+  display: flex;
+}
+
+/*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-
 #about {
-  background: #101522;
   background-size: cover;
   overflow: hidden;
   position: relative;
-  color: #fff;
   padding: 60px 0 40px 0;
-}
-
-#about:before {
-  content: "";
-  background: rgba(13, 20, 41, 0.8);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 #about h2 {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #fff;
+  text-transform: uppercase;
 }
 
 #about h3 {
@@ -740,13 +763,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
-  color: #fff;
 }
 
 #about p {
-  font-size: 14px;
   margin-bottom: 20px;
-  color: #fff;
+  line-height: 34px;
+}
+
+#about img {
+  width: 100%;
+  height: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -1514,7 +1540,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer {
   background: #101522;
-  padding: 0 0 25px 0;
   color: #eee;
   font-size: 14px;
 }
@@ -1524,21 +1549,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 60px 0 30px 0;
 }
 
-#footer .footer-top .footer-info {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-info h3 {
-  font-size: 26px;
-  margin: 0 0 20px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  color: #fff;
-}
-
-#footer .footer-top .footer-info img {
+#footer .footer-top .footer-logo img {
   height: 40px;
   margin-bottom: 10px;
 }
@@ -1572,13 +1583,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top h4 {
+  margin: 0px;
   font-size: 14px;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
   position: relative;
-  padding-bottom: 12px;
-  border-bottom: 2px solid #D7345D;
 }
 
 #footer .footer-top .footer-links {
@@ -1726,9 +1736,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 1920px) { 
 
-  #nav-menu-container {
+  /* #nav-menu-container {
     display: none;
-  }
+  } */
 
   #mobile-nav-toggle {
     display: inline;
