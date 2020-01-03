@@ -140,6 +140,18 @@ h6 {
   background-color: #f6f7fd;
 }
 
+#banner-logo-container-sub-header {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  font-size: 22px !important;
+}
+
+#banner-logo-container-sub-header strong {
+  font-size: 34px;
+  margin-right: 1rem;
+}
+
 #banner-logo-container{
   max-width: 900px;
 }
@@ -286,15 +298,26 @@ h6 {
   margin: 0;
 }
 
+#nav-menu-apply-box {
+  border: 1px solid #CDDCF1;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+#nav-menu-apply-box a:before {
+  background-color: transparent !important;
+}
+
+
+
 /* Nav Meu Styling */
 
 .nav-menu a {
   padding: 8px;
   text-decoration: none;
   display: inline-block;
-  color: rgba(202, 206, 221, 0.8);
+  color: #F2F5F9;
   font-family: "Raleway", sans-serif;
-  font-weight: 600;
   font-size: 14px;
   outline: none;
 }
@@ -1726,9 +1749,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 1920px) { 
 
-  #nav-menu-container {
+  /* #nav-menu-container {
     display: none;
-  }
+  } */
 
   #mobile-nav-toggle {
     display: inline;
