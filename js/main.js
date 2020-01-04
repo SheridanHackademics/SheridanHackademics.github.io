@@ -9,8 +9,8 @@ jQuery(document).ready(function ($) {
     }
   });
   $('.back-to-top').click(function () {
-    $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
-    return false;
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+  //  return false;
   });
 
   // Header fixed on scroll
