@@ -317,29 +317,31 @@ h6 {
 }
 
 #nav-menu-apply-box {
-    border-radius: 3px;
-    font-weight: 600;
-    padding: 10px;
-    background-color: #2D65B5;
-    color: #CEDCF1;
+    /*    border-radius: 3px;*/
+    font-weight: 400;
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #2D65B5;
     margin-top: 2px;
-    font-size: 18px;
+    font-size: 20px;
+    text-transform: uppercase;
+    /*    font-family: "Space Mono", monospace;*/
 }
 
-#nav-menu-apply-box a:before {
-    background-color: transparent !important;
+#nav-menu-apply-box:hover {
+    transition: 0.5 ease-in;
+    background-color: #CEDCF1;
+    color: #2D65B5;
 }
 
-
-
-/* Nav Meu Styling */
+/* Nav Menu Styling */
 
 .nav-menu a {
     padding: 8px;
     text-decoration: none;
     display: inline-block;
     color: #F2F5F9;
-    font-family: "Raleway", sans-serif;
+    font-family: "Karla", sans-serif;
     font-size: 14px;
     outline: none;
 }
@@ -582,7 +584,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro h1 {
     color: #CEDCF1;
-    font-family: "Raleway", sans-serif;
+    font-family: "Karla", sans-serif;
     font-size: 56px;
     font-weight: 600;
     text-transform: uppercase;
@@ -674,7 +676,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .about-btn {
-    font-family: "Raleway", sans-serif;
+    font-family: "Karla", sans-serif;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 1px;
@@ -707,6 +709,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     min-width: 300px;
 }
 
+/*
+
 #intro button {
     border: 0;
     padding: 15px 50px;
@@ -722,6 +726,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro button:hover {
     background: #e0072f;
 }
+*/
 
 @-webkit-keyframes pulsate-btn {
     0% {
@@ -792,7 +797,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about p {
     margin-bottom: 20px;
     line-height: 34px;
-    color: #5E91D1;
+    color: #CEDCF1;
 }
 
 #about img {
@@ -1338,6 +1343,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
+# hackville 2019 Section
+--------------------------------------------------------------*/
+
+.wow h2 {
+    font-family: "Space Mono", monospace;
+}
+
+
+/*--------------------------------------------------------------
 # Subscribe Section
 --------------------------------------------------------------*/
 
@@ -1595,7 +1609,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 0;
-    font-family: "Raleway", sans-serif;
+    font-family: "Karla", sans-serif;
     color: #CEDCF1;
 }
 
