@@ -1352,6 +1352,25 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-family: "Space Mono", monospace;
 }
 
+.hackville2019 {
+    margin-top: 100px;
+}
+
+.winners-2019{
+    margin-top: 50px;
+}
+
+/*--------------------------------------------------------------
+# Get Involved Section
+--------------------------------------------------------------*/
+
+.get-involved {
+    padding: 100px 0;
+}
+
+.involved-roles {
+    padding-bottom: 100px;
+}
 
 /*--------------------------------------------------------------
 # Subscribe Section
