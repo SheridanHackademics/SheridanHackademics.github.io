@@ -1356,7 +1356,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 100px;
 }
 
-.winners-2019{
+.winners-2019 {
     margin-top: 50px;
 }
 
@@ -1370,6 +1370,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .involved-roles {
     padding-bottom: 100px;
+}
+
+.involved-text {
+    margin: 0 auto 50px auto;
+    width: 60%;
+    text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -1782,8 +1788,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     #subscribe {
         background-attachment: fixed;
     }
-    
-     #banner-logo-hackademics {
+
+    #banner-logo-hackademics {
         width: 15%;
     }
 }
@@ -1825,12 +1831,13 @@ body.mobile-nav-active #mobile-nav-toggle {
     #mobile-nav-toggle {
         display: inline;
     }
-     #banner-logo-hackville {
+
+    #banner-logo-hackville {
         width: 50%;
     }
-   
-    
-    
+
+
+
 }
 
 @media (max-width: 991px) {
