@@ -10,7 +10,9 @@
 --------------------------------------------------------------*/
 
 body {
-    background: #CEDCF1;
+    /*    background: #CEDCF1;*/
+    background-color: #00194B;
+
     color: #2f3138;
     font-family: "Karla", sans-serif;
 }
@@ -44,7 +46,7 @@ h6 {
     font-weight: 400;
     margin: 0 0 20px 0;
     padding: 0;
-    color: #0e1b4d;
+    color: #F2F5F9;
 }
 
 .img {
@@ -548,7 +550,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-size: cover;
     overflow: hidden;
     position: relative;
-    background-color: #00194B;
 }
 
 #intro:before {
@@ -762,7 +763,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Main Section
 --------------------------------------------------------------*/
 #main {
-    background-color: #F2F5F9;
+    /*    background-color: #F2F5F9;*/
 }
 
 .flex {
@@ -773,7 +774,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 # About Section
 --------------------------------------------------------------*/
 #about {
-    background-color: #00194B;
+    /*    background-color: #00194B;*/
     background-size: cover;
     overflow: hidden;
     position: relative;
@@ -1292,7 +1293,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #faq {
     padding: 60px 0;
-    background-color: #2F63B5;
+    /*    background-color: #2F63B5;*/
 }
 
 #faq #faq-list {
