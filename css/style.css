@@ -1284,7 +1284,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .sponsor-text-section {
-/*
+    /*
     width: 70%;
     float: left;
     margin-top: 75px;
@@ -1547,6 +1547,28 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-left: 2%;
     vertical-align: middle;
 }
+
+.footer-left {
+    width: 50%;
+    float: left;
+}
+
+.footer-right {
+    width: 50%;
+    float: left;
+}
+
+footer h2 {
+    color: #F2F5F9;
+    font-size: 1.4em;
+    font-family: "Space Mono", monospace;
+    margin-bottom: 5px;
+}
+
+footer p a{
+    color: #F2F5F9;
+}
+
 
 /*--------------------------------------------------------------
 # Responsive Media Queries
