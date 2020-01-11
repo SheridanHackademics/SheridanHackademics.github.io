@@ -1327,6 +1327,30 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 100px;
 }
 
+.recap-stats {
+    margin: 5%; 5%;
+    text-align: center;
+    width: 90%;
+}
+
+.stats-img {
+    height: 20%;
+    margin: 0 5%;
+}
+
+.recap-gallery {
+    margin: 10% 0;
+}
+
+.recap-row {
+    width: 90%;
+    margin: 0.25% 5%;
+}
+
+.recap-img {
+    width: 33%;
+}
+
 /*--------------------------------------------------------------
 # Get Involved Section
 --------------------------------------------------------------*/
