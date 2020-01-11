@@ -808,7 +808,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about p {
     margin-bottom: 20px;
     line-height: 34px;
-    color: #CEDCF1;
+    color: #5E91D1;
 }
 
 #about img {
@@ -1542,7 +1542,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer-img {
-    width: 50%;
+    width: 40%;
+    object-fit: contain;
+    margin-left: 2%;
+    vertical-align: middle;
 }
 
 /*--------------------------------------------------------------
