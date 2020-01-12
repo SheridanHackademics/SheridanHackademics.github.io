@@ -1293,13 +1293,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #why-hack .point h2 {
+    margin-top: 2rem;
     font-size: 1.5em;
     text-align: center;
 }
 
 #why-hack .point img {
     height: 260px;
-    padding: 0px 3rem;
+    padding: 0px 1rem;
+    margin-bottom: 1rem;
 }
 
 /*--------------------------------------------------------------
@@ -1400,6 +1402,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 .recap-img {
     height: 100%;
     padding: 2px;
+}
+
+.recap-title {
+    width: 100%;
+    font-size: 500%;
+    font-family: "Karla", sans-serif !important;
+    font-weight: bold;
+}
+
+.recap-sub-title {
+    font-size: 200%;
+    font-family: "Karla", sans-serif !important;
+    text-align: center;
+}
+
+.recap-color {
+    color: #3366B6;
 }
 
 /*--------------------------------------------------------------
