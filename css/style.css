@@ -34,7 +34,6 @@ a:focus {
 p {
     padding: 0;
     margin: 0 0 30px 0;
-    color:
 }
 
 h1,
@@ -1192,8 +1191,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #sponsors .sponsors-wrap {
-    border-top: 1px solid #;
-    border-left: 1px solid #;
     margin-bottom: 30px;
 }
 
@@ -1292,6 +1289,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
+# Why Should I  Hack Section
+--------------------------------------------------------------*/
+
+#why-hack .point h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#why-hack .point img {
+    height: 260px;
+    padding: 0px 3rem;
+}
+
+/*--------------------------------------------------------------
 # F.A.Q Section
 --------------------------------------------------------------*/
 
@@ -1319,6 +1330,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-weight: 600;
     padding-right: 20px;
     color: #F2F5F9;
+
 }
 
 #faq #faq-list i {
@@ -1330,7 +1342,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #faq #faq-list p {
     margin-bottom: 20px;
-    color: #F2F5F9;
+    /* color: #F2F5F9; */
+    color: #5E91D1;
 }
 
 #faq #faq-list a.collapse {
@@ -1359,13 +1372,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .hackville2019 {
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.recap-stats {
-    margin: 5%;
-    5%;
-    text-align: center;
-    width: 90%;
+.hackville2019 .stats {
+    padding: 1rem 45px;
+}
+
+.recap-stat {
+    height: 255px;
 }
 
 .stats-img {
@@ -1383,7 +1398,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .recap-img {
-    width: 33%;
+    height: 100%;
+    padding: 2px;
 }
 
 /*--------------------------------------------------------------
