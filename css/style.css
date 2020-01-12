@@ -48,6 +48,11 @@ h6 {
     color: #F2F5F9;
 }
 
+.anchor {
+    position: absolute;
+    top: -100px;
+}
+
 .img {
     width: 100%;
     height: 100%;
@@ -58,7 +63,8 @@ h6 {
     color: #01174B;
     padding: 5% 15%;
     margin: 2%;
-    font-size: 1.2em;
+    font-size: 20px;
+    border-radius: 0px;
 }
 
 .card {
@@ -785,7 +791,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-size: cover;
     overflow: hidden;
     position: relative;
-    padding: 60px 0 40px 0;
+    padding: 8rem 0 3rem 0;
 }
 
 #about h2 {
@@ -1201,7 +1207,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #sponsors .sponsor-logoo {
-    padding: 30px 50px;
+    padding: 25px 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1291,6 +1297,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Why Should I  Hack Section
 --------------------------------------------------------------*/
+#why-hack {
+    padding: 5rem 0 3rem 0;
+}
 
 #why-hack .point h2 {
     margin-top: 2rem;
@@ -1309,7 +1318,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #faq {
-    padding: 60px 0;
+    padding: 5rem 0 3rem 0;
     /*    background-color: #2F63B5;*/
 }
 
@@ -1373,8 +1382,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .hackville2019 {
+    position: relative;
     margin-top: 100px;
     margin-bottom: 100px;
+    padding: 5rem 0 3rem 0;
 }
 
 .hackville2019 .stats {
