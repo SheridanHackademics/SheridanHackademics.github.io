@@ -167,7 +167,7 @@ h6 {
     background-color: #f6f7fd;
 }
 
-#banner-logo-container-sub-header {
+#banner-logo#nav-menu-container-sub-header {
     /*    display: flex;*/
     align-content: center;
     align-items: center;
@@ -175,22 +175,35 @@ h6 {
     text-align: center;
 }
 
-#banner-logo-container-sub-header strong {
+#banner-logo#nav-menu-container-sub-header strong {
     font-size: 34px;
     margin-right: 1rem;
 }
 
-#banner-logo-container {
-    max-width: 900px;
+#banner-logo#nav-menu-container {
+    /* max-width: 900px; */
 }
 
 #banner-logo-hackademics {
-    width: 20%;
+    width: 70%;
 }
 
 #banner-logo-hackville {
     width: 70%;
 }
+
+/* Extra edits after mobile edit */
+.screen-reader,
+.fa {
+    display: none;
+}
+
+.intro-container {
+    margin-top: 120px;
+    text-align: center;
+}
+
+
 
 /*--------------------------------------------------------------
 # Header
@@ -260,6 +273,13 @@ h6 {
     width: 100%;
 }
 
+#enlarge {
+    font-size: 25px;
+}
+
+#dateFont {
+    font-size: 20px;
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -287,12 +307,12 @@ h6 {
     white-space: nowrap;
 }
 
-.nav-menu > li {
+.nav-menu>li {
     float: left;
 }
 
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
+.nav-menu li:hover>ul,
+.nav-menu li.sfHover>ul {
     display: block;
 }
 
@@ -324,9 +344,9 @@ h6 {
     content: "\f105";
 }
 
-/* Nav Meu Container */
+/* Nav Meu#nav-menu-container */
 
-#nav-menu-container {
+#nav-menu#nav-menu-container {
     float: right;
     margin: 0 0 0 0;
 }
@@ -366,11 +386,11 @@ h6 {
     color: #CEDCF1;
 }
 
-.nav-menu > li {
+.nav-menu>li {
     margin-left: 8px;
 }
 
-.nav-menu > li > a:before {
+.nav-menu>li>a:before {
     content: "";
     position: absolute;
     width: 0;
@@ -383,8 +403,8 @@ h6 {
 }
 
 .nav-menu a:hover:before,
-.nav-menu li:hover > a:before,
-.nav-menu .menu-active > a:before {
+.nav-menu li:hover>a:before,
+.nav-menu .menu-active>a:before {
     visibility: visible;
     width: 100%;
 }
@@ -434,7 +454,7 @@ h6 {
     border-radius: 3px;
 }
 
-.nav-menu ul li:hover > a {
+.nav-menu ul li:hover>a {
     background: #00194B;
     color: #CEDCF1;
 }
@@ -575,7 +595,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     right: 0;
 }
 
-#intro .intro-container {
+#intro .intro#nav-menu-container {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1024,7 +1044,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 60px 0;
 }
 
-#venue .container-fluid {
+#venue #nav-menu-container-fluid {
     margin-bottom: 3px;
 }
 
@@ -1063,7 +1083,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-bottom: 0;
 }
 
-#venue .venue-gallery-container {
+#venue .venue-gallery#nav-menu-container {
     padding-right: 12px;
 }
 
@@ -1611,7 +1631,7 @@ footer h2 {
     margin-bottom: 5px;
 }
 
-footer p a{
+footer p a {
     color: #F2F5F9;
 }
 
@@ -1665,7 +1685,7 @@ footer p a{
 }
 
 @media (max-width: 1199px) {
-    #header .container {
+    #header #nav-menu-container {
         max-width: 100%;
     }
 
@@ -1694,7 +1714,7 @@ footer p a{
 
 @media (max-width: 1920px) {
 
-    /* #nav-menu-container {
+    /* #nav-menu#nav-menu-container {
     display: none;
   } */
 
@@ -1710,7 +1730,173 @@ footer p a{
 
 }
 
+/*
+    Editing for responsive mobile portrait view, 
+    which includes the hamburger nav tab.
+    Hamburger nav resource:
+    https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793 
+*/
 @media (max-width: 991px) {
+
+    /* undoing web frame styles */
+    .screen-reader,
+    .fa {
+        display: block;
+    }
+
+    #header.header-scrolled,
+    #header.header-fixed {
+        background: #1a1a1a;
+    }
+
+    .intro-container {
+        margin-top: 140px;
+    }
+
+    body {
+        /* Body was off screen a bit */
+        margin-left: 18px;
+    }
+
+    #intro {
+        margin-top: 20px;
+    }
+
+    .scrollto {
+        /* Positioning logo away from hamburger nav */
+        position: absolute;
+        top: 15px;
+        right: 80px;
+    }
+
+    /* sandwich nav styles */
+    .screen-reader {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
+
+    /* Button styling */
+    .menu-toggle {
+        display: inline-block;
+        padding: .2em 15px;
+        line-height: 0em;
+        font-size: 2em;
+        color: white;
+    }
+
+    .menu-toggle:hover,
+    .menu-toggle:focus {
+        color: rgb(59, 110, 204);
+        text-decoration: none;
+    }
+
+    /*
+ Default styles + Mobile first
+ Offscreen menu style
+*/
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav-menu-container {
+        position: absolute;
+        display: none;
+        left: -200px;
+        top: 30;
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: visible;
+        transition: left 0.3s ease,
+            box-shadow 0.3s ease;
+        z-index: 999;
+    }
+
+    #nav-menu-container li {
+        list-style: none;
+        margin: 0;
+        padding: 1em 0 0;
+        min-height: 100%;
+        width: 200px;
+        background: #1a1a1a;
+    }
+
+    #nav-menu-container a {
+        display: block;
+        padding: .75em 15px;
+        line-height: 1em;
+        font-size: 1.3em;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 1px solid #383838;
+    }
+
+    #nav-menu-container a:hover,
+    #nav-menu-container a:focus {
+        background: #333;
+    }
+
+    #nav-menu-container .menu-close {
+        position: absolute;
+        top: 0;
+    }
+
+    /*
+ On small devices, allow it to toggle...
+*/
+    /*
+ :target for non-JavaScript
+ [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
+*/
+    #nav-menu-container:target {
+        display: block;
+        left: 0;
+        outline: none;
+
+    }
+
+    #nav-menu-container:target .menu-close {
+        z-index: 1001;
+    }
+
+    #nav-menu-container:target ul {
+        position: relative;
+        z-index: 1000;
+    }
+
+    /* 
+ We could us `#nav-menu-container:target:after`, but
+ it wouldn't be clickable.
+*/
+    #nav-menu-container:target+.backdrop {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 998;
+        background: #000;
+        background: rgba(0, 0, 0, .85);
+        cursor: default;
+    }
+
+    @supports (position: fixed) {
+
+        #nav-menu-container,
+        #nav-menu-container:target+.backdrop {
+            position: fixed;
+        }
+    }
+
+    /* header styles */
     #header {
         background: rgba(6, 12, 34, 0.98);
         height: 70px;
@@ -1718,7 +1904,7 @@ footer p a{
         transition: all 0.5s;
     }
 
-    #intro .intro-container {
+    #intro .intro#nav-menu-container {
         top: 70px;
     }
 
@@ -1735,11 +1921,11 @@ footer p a{
     }
 
     #banner-logo-hackville {
-        width: 45%;
+        width: 35%;
     }
 
     #banner-logo-hackademics {
-        width: 15%;
+        width: 55%;
     }
 }
 
