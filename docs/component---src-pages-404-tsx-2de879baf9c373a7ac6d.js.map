@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/404.tsx"],"names":["Page404"],"mappings":"6FAEA,OAMeA,UANW,kBACtB","file":"component---src-pages-404-tsx-2de879baf9c373a7ac6d.js","sourcesContent":["\n\nconst Page404: React.FC = () => (\n    <div>\n        404 page\n    </div>\n);\n\nexport default Page404;"],"sourceRoot":""}
