@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{"i6+/":function(e,n,t){"use strict";t.r(n);n.default=function(){return React.createElement("div",null,"404 page")}}}]);
-//# sourceMappingURL=component---src-pages-404-tsx-2de879baf9c373a7ac6d.js.map
