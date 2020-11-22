@@ -6,7 +6,7 @@ Hackville websites for Hackademics. Sheridans Hackathon.
 
 - [x] 2019
 - [x] 2020 (Cancelled because of covid-19)
-- [ ] 2020
+- [ ] 2021
 
 ## Get involved
 
